@@ -35,6 +35,7 @@ header{
 
 /*Logotipo start*/
 .logotipo img{
+    width: 80px;
 }
 
 /*Logotipo end*/
@@ -132,10 +133,47 @@ header{
 
 /*Lateral direita start*/
 .lateral_direita{
-    background-color: aqua;
+    width: 300px;
     text-align: center;
     margin: 20px;
     padding: 30px;
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+.destaques_semana img{
+    margin: 10px 0px;
+}
+
+.grupos_bate_papo{
+    margin: 20px 0px;
+}
+
+.parceiros{
+    margin: 20px 0px;
+}
+
+.tags ul{
+    list-style: none;
+}
+
+.tags li{
+  float: left;
+}
+
+.tags a{
+    text-decoration: none;
+    display: block;
+    color: red;
+    padding: 8px;
+}
+
+.tags a:hover{
+    background-color: violet;
+    color: rgba(255, 0, 0, 0.616);
+}
+
+.tags a:active{
+    color: darkorange;
 }
 
 /*Lateral direita end*/
@@ -144,6 +182,7 @@ header{
 .paginacao{
   display: flex;
   justify-content: center;
+  margin: 50px 0px;
 }
 
 .paginacao ul{
@@ -180,6 +219,19 @@ header{
     margin: 30px;
 }
 
+.informacoes a{
+    color: red;
+    margin: 2px;
+}
+
+.informacoes a:hover{
+    color: rgba(255, 0, 0, 0.616);
+}
+
+.informacoes a:active{
+    color: darkorange;
+}
+
 .copyright{
     text-align: center;
     margin: 50px 0px;
@@ -187,6 +239,7 @@ header{
 
 .copyright p{
     margin: 30px;
+    color: red;
 }
 
 /*Flex itens do rodape end*/
