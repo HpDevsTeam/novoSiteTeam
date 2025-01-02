@@ -1,0 +1,231 @@
+*{
+    max-width: 100%;
+}
+
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+header{
+    background-color: black;
+}
+
+/*Marcador de pagina atual start*/
+.ativado{
+    background-color: darkorange;
+}
+
+/*Marcador de pagina atual end*/
+
+/*Titulo principal start*/
+.titulo_principal{
+  text-align: center;
+}
+
+/*Titulo principal end*/
+
+/*Flex logo e navegação start*/
+.flex_top{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Flex logo e navegação end*/
+
+/*Logotipo start*/
+.logotipo img{
+}
+
+/*Logotipo end*/
+
+/*Navegação start*/
+
+/*.navegacao{
+}*/
+
+.navegacao ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.navegacao li{
+   float: left;
+}
+
+.navegacao a{
+    padding: 16px 18px;
+    color: white;
+    display: block;
+    margin: 0px 2px;
+}
+
+.navegacao a:hover:not(.ativado){
+    background-color: darkorange;
+}
+
+/*Navegação end*/
+
+/*Menu mobile start*/
+.menuMobile{
+    background-color: darkorange;
+    display: none;
+}
+
+.menuMobile:hover{
+  background-color: rgba(255, 140, 0, 0.795);
+}
+
+/*Menu mobile end*/
+
+/*Menu para baixo start*/
+.menuParaBaixo{
+    background-color: black;
+    display: none;
+}
+
+.menuParaBaixo ul{
+    list-style: none;
+}
+
+.menuParaBaixo li{
+
+}
+
+.menuParaBaixo a{
+    display: block;
+    padding: 16px 18px;
+    margin: 2px 0px;
+    color: white;
+}
+
+.menuParaBaixo a:hover:not(.ativado){
+    background-color: darkorange;
+}
+
+/*Menu para baixo end*/
+
+/*Centralizar conteudo start*/
+.flex_center{
+   display: flex;
+   justify-content: space-around;
+}
+
+/*Centralizar conteudo end*/
+
+/*Centraliza e ajusta blocos de conteudos start*/
+.flex_conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 10%;
+}
+
+.bloco{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: antiquewhite;
+}
+
+/*Centraliza e ajusta blocos de conteudos end*/
+
+/*Lateral direita start*/
+.lateral_direita{
+    background-color: aqua;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+/*Lateral direita end*/
+
+/*Paginação start*/
+.paginacao{
+  display: flex;
+  justify-content: center;
+}
+
+.paginacao ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.paginacao li{
+  float: left;
+}
+
+.paginacao a{
+    border: 1px white solid;
+    text-decoration: none;
+    color: white;
+     display: block;
+     padding: 16px 18px;
+     margin: 0px 2px;
+}
+
+.paginacao a:hover:not(.ativado){
+    background-color: rgba(255, 140, 0, 0.884);
+}
+
+/*Paginação end*/
+
+/*Flex itens do rodape start*/
+.flex_bottom{
+    display: flex;
+    margin: 50px 0px;
+}
+
+.informacoes{
+    margin: 30px;
+}
+
+.copyright{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.copyright p{
+    margin: 30px;
+}
+
+/*Flex itens do rodape end*/
+
+@media screen and (max-width: 900px) {
+
+    .flex_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navegacao{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+        background-color: darkorange;
+    }
+
+    .flex_center{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+     }
+
+     .paginacao a{
+        border: 1px white solid;
+        text-decoration: none;
+        color: white;
+         display: block;
+         padding: 6px 15px;
+         margin: 5px;
+    }
+
+    .flex_bottom{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px;
+    }
+}
